@@ -40,8 +40,9 @@
 ios motion 状态突变分界点判断</p>
 
 <p>用同一个分类器walkride去判断不同人的walk ride不太准
-基于每个人自己的accelerator 聚类 震动频率，每个类里面的速度有判断错的因为无监督，只按照特征自己聚类，速度去噪
-然后每个类的速度的（速度不是因人而异） mean std min max</p>
+基于每个人自己的accelerator 聚类 震动频率，每个类里面的速度有判断错的因为无监督，只按照特征自己聚类，速度去噪(中间值平滑)
+然后每个类的速度的（速度不是因人而异） mean std min max
+结果：如果哪天骑车多会聚类出骑车，哪天跑步了 但是跑不少 聚类不出来跑步</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/2877992943/unsupervised-individual-motion">Unsupervised-individual-motion</a> is maintained by <a href="https://github.com/2877992943">2877992943</a>.</span>
